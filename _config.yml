@@ -1,0 +1,24 @@
+# Setup
+title:               Moon's CS
+# tagline:             'CBE 전공자의 CS/AI 도전'
+description:         'CBE 전공자의 CS/AI 도전'
+url:                 https://huicheolmoon.github.io
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Huicheol Moon
+  description:       "CS/AI를 공부하는 학생입니다."
+  contact:
+    github:            https://github.com/HuicheolMoon
+    email:             huicheol7@gmail.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+timezone: Asia/Seoul
+categories: [Python, Coding, AI]
