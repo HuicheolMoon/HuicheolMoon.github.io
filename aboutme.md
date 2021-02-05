@@ -3,27 +3,19 @@ layout: page
 title: About Me
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+[2020.01 ~ ] CS/AI 공부를 하고 있는 비전공 학생입니다.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+제 블로그에서 얻어가는 것이 많았으면 합니다. 피드백은 항상 감사합니다.
 
-There are currently two themes built on Poole:
+[GitHub](https://github.com/HuicheolMoon) 에서도 저를 만나실 수 있습니다.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+## Experience
+* 2020.01 - Present : Boostcamp (*about AI Tech*)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## Education
 
-## Setup
+* Present : *Undergraduate. KAIST, Chemical and Biomolecular Engineering*
 
-Some fun facts about the setup of this project include:
+***
 
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+읽어주셔서 감사합니다!
