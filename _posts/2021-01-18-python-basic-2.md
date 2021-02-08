@@ -42,10 +42,11 @@ date: 2021-01-19 19:00:00 +0900
 
 4. 특별한 의미가 있는 예약어는 쓰지 않는다. (예약어는 이미 의미와 용법이 지정되어 사용되는 단어를 말합니다.)
 
-    ex) for, if, else 등<br/><br/>
+    ex) for, if, else 등
 
 다음 포스트에서는 메모리에 저장되는 데이터의 형태인 '자료형'과 각 자료형의 연산에 대하여 공부합니다.
 
 <br/>
+
 ### References
 1. [Wikipedia: Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
