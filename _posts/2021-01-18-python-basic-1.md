@@ -9,7 +9,7 @@ date: 2021-01-18 19:00:00 +0900
 
 ### Python
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/77161691/107194693-bce60680-6a33-11eb-903e-72f51569202b.jpg" alt="guido" />
+  <img src="https://user-images.githubusercontent.com/77161691/107194693-bce60680-6a33-11eb-903e-72f51569202b.jpg" alt="guido"/>
   Guido Van Rossum, the author of Python
 </p>
 
@@ -17,7 +17,7 @@ date: 2021-01-18 19:00:00 +0900
 
 이렇게 python을 만든 귀도는 Google을 거쳐 Dropbox에서 근무하다가 현재는 MS에서 근무하면서 python의 발전에 계속 기여하고 있습니다.
 
-파이썬은 그리스 신화 속의 괴물 뱀의 이름입니다. 그리고 이 이름을 딴 'Monty Python's Flying Circus'라는, 우리나라로 치면 개그콘서트 비슷한 그룹에서 이름을 따오게 되면서 이름이 'Python' 이 되었습니다.
+파이썬은 그리스 신화 속의 괴물 뱀의 이름입니다. 그리고 이 이름을 딴 'Monty Python's Flying Circus'라는, 우리나라로 치면 개그콘서트 비슷한 그룹에서 이름을 따오게 되면서 이름이 'Python'이 되었습니다.
 
 파이썬의 특징을 한 문장으로 요약하자면...
 
