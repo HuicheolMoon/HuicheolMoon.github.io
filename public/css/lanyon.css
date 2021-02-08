@@ -73,6 +73,21 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .container {
+  max-width: 0rem;
+}
+@media (min-width: 0em) {
+  .container {
+    max-width: 0rem;
+  }
+}
+@media (min-width: 0em) {
+  .container {
+    max-width: 0rem;
+  }
+}
+
+/*
+.container {
   max-width: 28rem;
 }
 @media (min-width: 38em) {
@@ -85,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 38rem;
   }
 }
+*/
 
 
 /*
@@ -202,16 +218,11 @@ a.sidebar-nav-item:focus {
 
 /* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
 .sidebar-checkbox {
-  position: absolute;
-  opacity: 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  display: none;
 }
 
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
-  position: absolute;
   top:  .8rem;
   left: 1rem;
   display: flex;
