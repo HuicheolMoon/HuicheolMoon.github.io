@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python Basic : 1. 파이썬 개요(Intro to Python)"
+title: "Python Basic : 1. Introduction to Python"
 category: Python
 date: 2021-01-18 19:00:00 +0900
 ---
