@@ -4,8 +4,6 @@ title: About Me
 ---
 <br/>
 <br/>
-<br/>
-<br/>
 
 [2020.01 ~ ] DL/Python 공부를 하고 있는 비전공 학생입니다.
 <br/>
