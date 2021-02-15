@@ -125,8 +125,3 @@ reduce 함수는 iterable의 함수의 input으로 하여 출력되는 output을
 </p>
 
 위 skill들 각각의 용례는 쉬워보이지만 이 skill들을 잘 배합하여 원하는 코드를 작성하는 것은 매우 어려운 일입니다. 모두 숙지하고 자유자재로 활용할 수 있을 만큼 코딩 연습이 필요합니다.
-
-<br/>
-
-### References
-1. [Stackoverflow: Queue](https://stackoverflow.com/questions/63113107/queue-enqueue-vs-dequeue-fill-out-table-shift-needed)
