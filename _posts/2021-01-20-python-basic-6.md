@@ -141,5 +141,5 @@ collections는 List, Tuple, Dict에 대한 Python module입니다.
 <br/>
 
 ### References
-1. NAVER Connect Foundation
+1. NAVER Connect Foundation: Boostcamp AI Tech
 2. [Stackoverflow: Queue](https://stackoverflow.com/questions/63113107/queue-enqueue-vs-dequeue-fill-out-table-shift-needed)

@@ -85,4 +85,4 @@ f.close()
 <br/>
 
 ### References
-1. NAVER Connect Foundation
+1. NAVER Connect Foundation: Boostcamp AI Tech

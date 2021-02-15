@@ -168,5 +168,5 @@ True
 <br/>
 
 ### References
-1. NAVER Connect Foundation
+1. NAVER Connect Foundation: Boostcamp AI Tech
 2. [Wikipedia: Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)

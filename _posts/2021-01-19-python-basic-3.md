@@ -59,4 +59,4 @@ print(f"value is {value}")              # (3) fstring
 <br/>
 
 ### References
-1. NAVER Connect Foundation
+1. NAVER Connect Foundation: Boostcamp AI Tech

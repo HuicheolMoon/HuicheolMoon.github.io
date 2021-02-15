@@ -22,4 +22,4 @@ JSON(JavaScript Object Notation)은 원래 웹 언어인 Java Script의 데이�
 <br/>
 
 ### References
-1. NAVER Connect Foundation
+1. NAVER Connect Foundation: Boostcamp AI Tech

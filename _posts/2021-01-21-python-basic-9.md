@@ -53,4 +53,4 @@ Package는 하나의 대형 프로젝트를 만드는 코드의 묶음입니다.
 <br/>
 
 ### References
-1. NAVER Connect Foundation
+1. NAVER Connect Foundation: Boostcamp AI Tech

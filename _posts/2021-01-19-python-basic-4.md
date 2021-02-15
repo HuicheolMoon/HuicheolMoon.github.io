@@ -101,4 +101,4 @@ while문에서는 break와 continue, else 등의 제어 키워드가 사용됩�
 <br/>
 
 ### References
-1. NAVER Connect Foundation
+1. NAVER Connect Foundation: Boostcamp AI Tech

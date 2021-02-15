@@ -119,4 +119,4 @@ reduce 함수는 iterable의 함수의 input으로 하여 출력되는 output을
 <br/>
 
 ### References
-1. NAVER Connect Foundation
+1. NAVER Connect Foundation: Boostcamp AI Tech
