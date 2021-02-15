@@ -16,7 +16,7 @@ DL / Python 공부를 하고 있는 비전공 학생입니다.
 <br/>
 
 ## Experience
-* 2020.01 - Present : *Boostcamp (about AI Tech)*
+* 2020.01 - Present : *Boostcamp AI Tech*
 <br/>
 <br/>
 
