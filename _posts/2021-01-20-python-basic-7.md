@@ -25,85 +25,75 @@ Pythonic code는 파이썬 스타일의 코딩 기법을 의미합니다. 파이
 ## split
 split 함수는 string type의 값을 기준값으로 나눠서 list 형태로 변환하는 함수입니다.
 ```python
->>> items = 'zero one two three'.split()        # 빈칸을 기준으로 문자열 나누기
->>> print (items)
-['zero', 'one', 'two', 'three']
->>> example = 'python,java,javascript'          # ","을 기준으로 문자열 나누기
->>> example.split(",")
-['python', ‘java', 'javascript']
->>> a, b, c = example.split(",")                # 리스트에 있는 각 값을 a,b,c 변수로 unpacking
->>> example = ‘teamlab.technology.io'
->>> subdomain, domain, tld = example.split('.') # "."을 기준으로 문자열 나누기 → Unpacking
+>>> numbers = 'one two three'.split()
+>>> print (numbers)
+['one', 'two', 'three']
+>>> numbers = 'one,two,three'.split(",")
+>>> print(numbers)
+['one', 'two', 'three']
 ```
 
 ## join
 join 함수는 string으로 구성된 list를 합쳐 하나의 string으로 반환하는 함수입니다.
 ```python
->>> colors = ['red', 'blue', 'green', 'yellow']
+>>> colors = ['one', 'two', 'three']
 >>> result = ''.join(colors)
 >>> result
-'redbluegreenyellow'
->>> result = ' '.join(colors)  # 연결 시 빈칸 1칸으로 연결
+'onetwothree'
+>>> result = ' '.join(colors)  # 연결 시 빈칸으로 연결
 >>> result
-'red blue green yellow'
->>> result = ', '.join(colors) # 연결 시 ", "으로 연결
+'one two three'
+>>> result = '-'.join(colors)  # 연결 시 ","으로 연결
 >>> result
-'red, blue, green, yellow'
->>> result = '-'.join(colors)  # 연결 시 "-"으로 연결
->>> result
-'red-blue-green-yellow'
+'one,two,three'
 ```
 
 ## List comprehension
 개인적으로 pythonic code의 꽃이라고 생각하는 List comprehension입니다. List comprehension은 기존 List를 사용하여 간단히 다른 List를 만드는 기법입니다. 파이썬에서 가장 많이 사용되는 기법 중 하나이고 일반적으로 for + append 보다 속도가 빠릅니다. 아래에서 for + append 방식과 코드를 비교해보겠습니다.
 ```python
 >>> result = []
->>> for i in range(10):              # for + append
+>>> for i in range(5):              # for + append
 ...   result.append(i)
 ...
 >>> result
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[0, 1, 2, 3, 4]
 ```
 
 ```python
->>> result = [i for i in range(10)]  # list comprehension
+>>> result = [i for i in range(5)]  # list comprehension
 >>> result
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
->>> result = [i for i in range(10) if i % 2 == 0]
->>> result
-[0, 2, 4, 6, 8]
+[0, 1, 2, 3, 4]
 ```
 
 ## enumerate
-enumerate 함수는 list의 element를 추출할 때 번호를 붙여서 추출합니다. 저는 for문에서 element와 index를 둘 다 사용해야 할 때 주로 사용하는 것 같습니다.
+enumerate 함수는 list의 element를 추출할 때 번호를 붙여서 추출합니다. for문에서 element와 index를 둘 다 사용해야 할 때 주로 사용하게 됩니다.
 ```python
->>> mylist = ['a', 'b', 'c', 'd']
->>> list(enumerate(mylist)) # list의 있는 index와 값을 unpacking하여 list로 저장
-[(0, 'a'), (1, 'b'), (2, 'c'), (3, 'd')]
+>>> target = ['a', 'b', 'c']
+>>> list(enumerate(target))
+[(0, 'a'), (1, 'b'), (2, 'c')]
 ```
 
 ## zip
 zip 함수는 두 list의 값을 병렬적으로 추출합니다.
 ```python
->>> alist = ['a1', 'a2', 'a3']
->>> blist = ['b1', 'b2', 'b3']
->>> for a, b in zip(alist, blist): # 병렬적으로 값을 추출
-...   print (a,b)
+>>> a_list = ['a1', 'a2']
+>>> b_list = ['b1', 'b2']
+>>> for a, b in zip(a_list, b_list): # 병렬적으로 값을 추출
+...   print (a, b)
 ...
 a1 b1
 a2 b2
-a3 b3
 ```
 
 ## lambda
 lambda는 함수 이름 없이 함수처럼 쓸 수 있는 익명함수입니다. 아래와 같이 사용할 수 있습니다.
 ```python
-def general_function(x, y):
+def sum_function(x, y):
     return x + y
 print(f(1, 4))
 
-lambda_function = lambda x, y: x + y
-    print(lambda_function(1, 4))
+sum_lambda = lambda x, y: x + y
+    print(sum_lambda(1, 4))
 ```
 
 lambda는 어려운 문법, 테스트의 어려움, 문서화 docstring 지원 미비, 코드 해석의 어려움, 이름이 존재하지 않는 함수의 출현 등 여러 문제를 가지고 있습니다. PEP8에서는 lambda의 사용을 권장하지 않습니다. 하지만 어쩔 수 없이 사용해야 하는 경우가 존재합니다.
@@ -111,17 +101,22 @@ lambda는 어려운 문법, 테스트의 어려움, 문서화 docstring 지원 �
 ## map
 map 함수는 iterable을 함수의 input으로 하여 출력되는 output을 원소로 하는 list를 반환합니다. 실행시점에 값을 생성하기 때문에 메모리를 효율적으로 사용할 수 있습니다.
 ```python
->>> ex = [1,2,3,4,5]
->>> print(list(map(lambda x: x+x, ex)))
-[2, 4, 6, 8, 10]
+>>> numbers = [1,2,3]
+>>> print(list(map(lambda x: x+x, numbers)))
+[2, 4, 6]
 ```
 
 # reduce
 reduce 함수는 iterable의 함수의 input으로 하여 출력되는 output을 누계한 결과를 반환합니다.
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/77161691/107365921-cf8a3980-6b20-11eb-8c7a-24e73026c82b.png" alt="reduce"/>
-   reduce
-</p>
+```python
+>>> from functools import reduce
+>>> print(reduce(lambda x, y: x+y, [1, 2, 3]))
+6
+```
 
 위 skill들 각각의 용례는 쉬워보이지만 이 skill들을 잘 배합하여 원하는 코드를 작성하는 것은 매우 어려운 일입니다. 모두 숙지하고 자유자재로 활용할 수 있을 만큼 코딩 연습이 필요합니다.
+
+<br/>
+
+### References
+1. NAVER Connect Foundation

@@ -13,7 +13,7 @@ date: 2021-01-22 19:00:00 +0900
 ```python
 try:
     예외 발생 가능 코드
-except <Exception Type>:
+except 예외 타입:
     예외 발생시 대응하는 코드
 else:
     예외가 발생하지 않을 때 동작하는 코드
@@ -40,25 +40,22 @@ for i in range(10):
 
 필요에 따라 강제로 Exception을 발생시켜야 하는 경우도 있는데 이 때는 raise를 사용합니다.
 ```python
-raise <Exception Type>(예외정보)
+raise 예외 타입(예외정보)
 ```
 
 ```python
 while True:
-    value = input("변환할 정수 값을 입력해주세요")
-    for digit in value:
-        if digit not in "0123456789":
-            raise ValueError("숫자값을 입력하지 않으셨습니다")
-    print("정수값으로 변환된 숫자 -", int(value))
+    value = input("변환할 정수를 입력해주세요: ")
+    if not digit.isdigit():
+        raise ValueError("숫자값을 입력하지 않으셨습니다")
+    print("정수로 변환된 숫자: ", int(value))
 ```
 
 특정 조건에 만족하지 않을 경우에 예외를 발생시키고 싶은 경우에는 assert를 사용합니다.
 ```python
-def get_binary_nmubmer(decimal_number):
-    assert isinstance(decimal_number, int)
-    return bin(decimal_number)
-
-print(get_binary_nmubmer(10))
+def get_binary_number(decimal):
+    assert isinstance(decimal, int)
+    return bin(decimal)
 ```
 
 ## File Handling
@@ -79,8 +76,13 @@ f.close()
 
 |Logging Level|설명|예시|
 |:---:|---|---|
-|DEBUG|개발시 처리 기록을 남겨야하는 로그 정보를 남김|- 다음 함수로 A 를 호출함<br/>- 변수 A 를 무엇으로 변경함|
-|INFO|처리가 진행되는 동안의 정보를 알림|- 서버가 시작되었음<br/>- 사용자 A가 프로그램에 접속함<br/>- 서버가 종료됨|
-|WARNING|사용자가 잘못 입력한 정보나 처리는 가능하나 원래 개발시 의도치 않는 정보가 들어왔을 때 알림|- Str입력을 기대했으나, Int가 입력됨<br/> -> Str casting으로 처리함<br/>- 함수에 argument로 이차원 리스트를 기대했으나<br/> -> 일차원 리스트가 들어옴, 이차원으로 변환후 처리|
-|ERROR|잘못된 처리로 인해 에러가 났으나, 프로그램은 동작할 수 있음을 알림|- 파일에 기록을 해야하는데 파일이 없음<br/> -> Exception 처리후 사용자에게 알림<br/>- 외부서비스와 연결 불가|
-|Critical|잘못된 처리로 데이터 손실이나 더이상 프로그램이 동작할 수 없음을 알림|- 잘못된 접근으로 해당 파일이 삭제됨<br/>- 사용자의 의한 강제 종료|
+|DEBUG|개발시 처리 기록을 남겨야하는 로그 정보|- 함수 A를 호출함<br/>- 변수 A를 변경함|
+|INFO|처리가 진행되는 동안의 정보|- 서버가 시작됨<br/>- 사용자가 프로그램에 접속함|
+|WARNING|입력된 정보가 처리는 가능하지만 의도치 않는 정보임|- Str입력을 기대했으나, Int가 입력됨<br/>- 함수에 argument로 이차원 리스트를 기대했으나 일차원 리스트가 들어옴|
+|ERROR|잘못된 처리로 인한 에러 발생, 프로그램은 동작 가능|- 파일에 기록을 해야하는데 파일이 없음<br/>- 외부 서비스와 연결 불가|
+|Critical|잘못된 처리로 인한 데이터 손실 또는 프로그램이 동작 불가|- 잘못된 접근으로 해당 파일이 삭제<br/>- 사용자의 의한 강제 종료|
+
+<br/>
+
+### References
+1. NAVER Connect Foundation

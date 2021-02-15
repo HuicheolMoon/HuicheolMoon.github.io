@@ -54,5 +54,6 @@ Python은 C를 비롯한 컴파일러 언어에 비해 실행 속도가 느린 �
 <br/>
 
 ### References
-1. [Wikipedia: Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum)
-2. [Github page: Guido Van Rossum](https://gvanrossum.github.io/)
+1. NAVER Connect Foundation
+2. [Wikipedia: Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum)
+3. [Github page: Guido Van Rossum](https://gvanrossum.github.io/)

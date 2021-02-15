@@ -18,3 +18,8 @@ XML은 데이터의 구조와 의미를 설명하는 TAG(MarkUp)를 사용하여
 
 ## JSON
 JSON(JavaScript Object Notation)은 원래 웹 언어인 Java Script의 데이터 객체 표현 방식입니다. 간결성으로 기계/인간이 모두 이해하기 편하고 데이터 용량이 적으며 Code로의 전환이 쉽다는 장점이 있습니다. 그렇기에 XML의 대체제로 많이 활용되고 있습니다. 파이썬에서는 json 모듈을 사용하여 쉽게 파싱 및 저장이 가능합니다. 데이터 저장 및 읽기는 dict type과 상호 호환이 가능합니다. 웹에서 제공하는 API는 대부분 정보 교환 시에 JSON을 활용합니다.
+
+<br/>
+
+### References
+1. NAVER Connect Foundation
