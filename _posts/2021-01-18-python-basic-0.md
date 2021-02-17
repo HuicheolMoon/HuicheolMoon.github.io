@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python Basic : 0"
+title: "Python Basic : 0. Overview"
 category: Python
 date: 2021-01-18 18:50:00 +0900
 ---
