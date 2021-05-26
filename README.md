@@ -2,7 +2,7 @@
 
 제가 공부한 자료를 정리하기 위한 페이지입니다.
 
-This blog was made with Lanyon. [2021.02.04 ~ ]
+This blog was made of Lanyon. [2021.02.04 ~ ]
 
 ## License
 
