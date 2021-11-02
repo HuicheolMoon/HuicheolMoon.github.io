@@ -1,8 +1,8 @@
 # [Github Page by HuicheolMoon](https://huicheolmoon.github.io/)
 
-제가 공부한 자료를 정리하기 위한 페이지입니다.
+This blog was made of Lanyon. [2021.02.04 ~ 2021.09.30]
 
-This blog was made of Lanyon. [2021.02.04 ~ ]
+현재 [티스토리](https://fettern.tistory.com/)로 블로그 이전했습니다!
 
 ## License
 
